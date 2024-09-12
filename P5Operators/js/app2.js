@@ -60,13 +60,7 @@ console.log(++numberOfStudents); // 5
 numberOfStudents --;
 console.log(numberOfStudents); // 1
 
-// Implement a program that takes an input for km/h and displays the result in m/s.
-// ○ Input: 72
-// ○ Output: 20
 
-let speedKmh = 72;
-let speedMs = convertKmHToMs(speedKmh);
-console.log(speedMs);
 
 
 
