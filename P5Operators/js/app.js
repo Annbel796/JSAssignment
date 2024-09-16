@@ -50,5 +50,10 @@ console.log(minutesOutput,"minute(s) and", secondsOutput,"second(s)");
 
 // 1 minute(s) and 51 second(s)
 
+// test.Number = 1,56;
+// let testResult;
+// testResult= Math.round (test.Number)
+// console.log(testResult);
+
 
 
