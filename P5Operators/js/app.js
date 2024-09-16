@@ -17,26 +17,29 @@ divisionOutput2 = divisionInput1 %= 4;
 console.log(divisionOutput1); // 2.75
 console.log(divisionOutput2); // 3
 
-let radius = 2;
-let area = 0;
-area = 3.14*(radius*radius);
-console.log(area); // 12.56
+let radiusInput = 2;
+let areaOutput = 0;
+areaOutput = Math.PI* Math.pow(radiusInput,2);
+console.log(areaOutput); // 12.56
 
 let nrInput = 11;
-let nrOutput = 0;
-nrOutput = -(nrInput);
-console.log(nrOutput); //-11
+let negativedOutput = 0;
+negativedOutput = nrInput * -1;
+console.log(negativedOutput); //-11
 
-let weightInput = 1.82;
+let hightInput = 1.82;
 let kiloInput = 70;
-BMIOutput = kiloInput/(weightInput*weightInput);
+BMIOutput = kiloInput/Math.pow(hightInput,2);
 console.log(BMIOutput); // 21,13
 
-let lengthInput1 = 3;
-let lengthInput2 = 4;
+let sideA = 3;
+let sideB = 4;
 let hypotenuseOutput = 0;
-hypotenuseOutput = Math.sqrt(lengthInput1*lengthInput1+lengthInput2*lengthInput2);
+hypotenuseOutput = Math.sqrt(Math.pow(sideA,2) + Math.pow(sideB,2));
 console.log(hypotenuseOutput); // 5
+
+//squareofAAndB = Math.pow(sideA,2) + Math.pow(sideB,2);
+//hypotenuseOutput = Math.sqrt(squareofAAndB);
 
 let secondsInput = 111;
 let minutesOutput = 0;
