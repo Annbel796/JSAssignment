@@ -1,4 +1,4 @@
-const birthYear = 2000;
+const birthYear = 2010;
 const currentYear = 2024;
 const favoriteNumber = 21;
 
@@ -42,6 +42,8 @@ else {
   console.log("Favorite Number is Odd");
 }
 
+let canVote = (ageOfPerson >= 18) ? "Can Vote" : "Can not vote";
+console.log(canVote);
 
 
 
