@@ -1,5 +1,5 @@
 // Task1
-const birthYear = 2030;
+const birthYear = 2010;
 const curentYaer = 2024;
 let ageOfPercent = curentYaer - birthYear;
 console.log(ageOfPercent);
@@ -41,5 +41,20 @@ else {
 }
 
 //console.log("Will you see this?");
+
+//My example
+let x = 11;
+
+if (x > 10){
+console.log("x more than 10")
+}
+
+else if (x == 10){
+console.log("x = 10");
+}
+
+else if (x < 10){
+console.log("x less 10");
+}
 
 
