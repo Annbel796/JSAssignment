@@ -63,15 +63,19 @@ function convertNumbersToLetters(number) {
 // ○ Output: First number is greater!
 // ○ Output: Second number is greater
 
+let score = 0;
+
 function evaluateNumber(firstNumber, secondNumber) {
   if (firstNumber === secondNumber) {
     return "Both numbers are equal!";
   } else if (firstNumber > secondNumber) {
+    score++;
     return "First number is greater!";
   } else if (firstNumber < secondNumber) {
+    score--;
     return "Second number is greater";
   }
 }
  console.log(evaluateNumber(6,2));
-
+ console.log(score);
 
