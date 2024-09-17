@@ -7,7 +7,7 @@ console.log(doubleNumber(number)); // Output: 8
 let inputeNomberOne = 0;
 
 // Solution 1
-function multiplyBySelf (numberTwoMoltiply) {
+function multiplyBySelf(numberTwoMoltiply) {
   return numberTwoMoltiply * numberTwoMoltiply;
 }
 console.log(multiplyBySelf(4))
@@ -78,4 +78,9 @@ function evaluateNumber(firstNumber, secondNumber) {
 }
  console.log(evaluateNumber(6,2));
  console.log(score);
+
+let score;
+function increaseBy (inputeNumber) {
+return inputeNumber ++
+}
 
