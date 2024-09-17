@@ -63,7 +63,7 @@ function convertNumbersToLetters(number) {
 // ○ Output: First number is greater!
 // ○ Output: Second number is greater
 
-let score = 0;
+let score = 9;
 
 function evaluateNumber(firstNumber, secondNumber) {
   if (firstNumber === secondNumber) {
