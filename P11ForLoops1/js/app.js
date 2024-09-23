@@ -30,8 +30,10 @@ for (let i = 10; i >= 0 ; i--) {
 
 
 function power (firstNumber, exponent){
+  // cache result
   let result = firstNumber;
   for (let i = 1; i < exponent; i++){
+  // multiply the result by the first Number
     result *= firstNumber;
   }
   return result;
@@ -42,3 +44,13 @@ let result = Math.pow(4, 24)
 console.log(result);
 
 console.log(Math.pow(4,24));
+
+//○ Output: 999 green bottles hanging on the wall. 999 green bottles hanging on
+// the wall.
+// ○ Output: And if one green bottle, should accidentally fall, there will be 998
+// green bottles hanging on the wall.
+// ○ Output… Until 0 bottles are remaining.
+
+for (let i = 9; i >= 0; i--){
+  console.log("There are " + i + "green bottles hanging on the wall " + i + "green bottles hanging on the wall. And if one green bottle, should accidentally fall, there will be " + i + "green bottles hanging on the wall");
+}
