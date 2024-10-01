@@ -84,9 +84,20 @@ console.log(evaluateInputNumber());
 // Develop a program that generates random X and Y coordinates for an enemy in a 2D game world with 100x100 coordinates.
 // Display these coordinates to the user.
 
+let max = 100;
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+let X = getRandomInt(max);
+let Y = getRandomInt(max);
+
+console.log("X:" + X + " Y:" + Y);
+
+
 //E7 Random_Password
 // Design a program that generates a random password with 6 characters, digits or symbols.
-
 'use strict';
 const possibleCharacters = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f", "g",
   "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "!", "?", "&", "&", "#", "*"];
@@ -101,13 +112,13 @@ function getRandomInt(max) {
 
 //console.log(getRandomInt()); //Check
 for (let i = 0; i < lengthOfPassword; i++) {
-    //console.log(i); //Check
+  //console.log(i); //Check
   let randomArrayIndex = getRandomInt();
   // console.log(randomArrayIndex);
   //console.log(possibleCharacters[randomArrayIndex]);
   password += possibleCharacters[randomArrayIndex];
 
-  //console.log(possibleCharacters[getRandomInt()]); // same for 102-104
+  //console.log(possibleCharacters[getRandomInt()]); // same for 117-118
 }
 console.log(password);
 //console.log(possibleCharacters[possibleCharacters.length-1]);
@@ -121,6 +132,29 @@ console.log(password);
 // Write a program that simulates item drops in a game. Define five different items, and randomly select an item for
 // the player to acquire.
 
+const items = ["sword", "shield", "armor", "boots", "helmet"];
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+let randomIndex = getRandomInt(items.length);
+let randomItem = items[randomIndex];
+
+console.log("You have acquired: " + randomItem);
+
 // E9 Random_Chance
 // Write a program that has a 10% chance of showing a secret message. Otherwise it just displays a message saying to try
 // again.
+
+const secretMessage = "This is s secret message"
+
+function showSecretText() {
+  const chance = Math.floor(Math.random() * 10); // Generate a random number between 0 and 9
+  if (chance == 0) {
+   return secretMessage;
+  } else {
+   return "Try again!";
+  }
+}
+console.log(showSecretText());
